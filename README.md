@@ -1,36 +1,34 @@
-## intersystems-objectscript-template
-This is a template for InterSystems ObjectScript Github repository.
-The template goes also with a few files which let you immedietly compile your ObjecScript files in InterSystems IRIS Community Edition in a docker container
+## Dataset simple M:N
+This data set demonstrates a basic M:N realtionship between 2 tables    
+The first is a list of members in Developer Community counting badges gained in Global Masters   
+The second is the reference of assigned badges from Global Masters with their titles   
+So we have M members that refer to the multiple badges they gained + their count    
+And we have set of N Bagdes that are assigned to several members with the count of mebers   
+releated tthe the badge and tre back link to them.   
+
+All data result from analysis of the member web pages in Developer Community   
+A loader for update of ídentified menbers and addition of new members is provided   
+The actual status reflects ~8600 account pages downloaded and analyzed.  
+It is up to you to take care for correct maipulation of the M:N reations.
 
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 
 ## Installation 
-
 Clone/git pull the repo into any local directory
-
 ```
-$ git clone https://github.com/intersystems-community/objectscript-docker-template.git
+git clone https://github.com/rcemper/Dataset-simple-M-N.git
 ```
-
-Open the terminal in this directory and run:
-
+Run the IRIS container with your project: 
 ```
-$ docker-compose build
+docker-compose up -d --build
 ```
-
-3. Run the IRIS container with your project:
-
-```
-$ docker-compose up -d
-```
-
 ## How to Test it
 
 Open IRIS terminal:
-
+###########################################################
 ```
-$ docker-compose exec iris iris session iris
+$ docker-compose exec iris iris session iris 
 USER>write ##class(dc.PackageSample.ObjectScript).Test()
 ```
 ## How to start coding
