@@ -1,12 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<<?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="objectscript-template.ZPM">
+  <Document name="dataset-simple-m-n.ZPM">
     <Module>
-      <Name>objectscript-template</Name>
-      <Version>1.1.2</Version>
+      <Name>dataset-simple-m-n/Name>
+      <Version>1.0.4</Version>
+      <Description>Demonstration of M:N relation</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-      <Resource Name="dc.PackageSample.PKG"/>
+      <Resource Name="community.objectscript.PKG"/>
+      <Resource Name="community.objectscript.macroexample.INC"/>
+      <Resource Name="community.objectscript.MacExample.MAC"/>
+      <Resource Name="community.objectscript.settings.GBL"/>
+      <SystemSetting Name="CSP.DefaultFileCharset" Value="UTF-8"/>
+      <Invokes>
+        <Invoke Class="community.objectscript.PersistentClass" Method="CreateRecord"></Invoke>
+        <Invoke Class="community.objectscript.ClassExample" Method="SetToTheGlobal">
+          <Arg>42</Arg>
+          <Arg>Text Data</Arg>
+        </Invoke>
+      </Invokes>
     </Module>
+   
   </Document>
 </Export>
