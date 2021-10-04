@@ -8,8 +8,31 @@ releated tthe the badge and tre back link to them.
 
 All data result from analysis of the member web pages in Developer Community   
 A loader for update of ídentified menbers and addition of new members is provided   
-The actual status reflects ~8600 account pages downloaded and analyzed.  
-It is up to you to take care for correct maipulation of the M:N reations.
+The actual status reflects 9690 accounts pages downloaded and analyzed relating to 177 badges.   
+
+Relations are implemented as Lists of pure id's (not oref to save space on GitHub)   
+````
+/// pure ID of awarded GM badges
+Property Badges As List Of %Integer;
+
+/// pure ID of assigned members
+Property Members As List Of %Integer;
+````
+
+A few explanation on operations structures for further extention:   
+GM badges never change or get deleted - so they just can grow   
+DC members can get GM badges granted, but the will never lose it  
+It is up to you to take care for correct manipulation of the M:N relations    
+for DELETE or UPDATE of DC memebers. This is left open intentional. 
+
+3 utilitie are provided:   
+- Load: this loads and analyzes the information presentes on the member'S page     
+- Upd : runs over all defined members to usinf LOAD for actual values    
+- New : runs past the highest knoem member'S id and tries to find new ones  
+MemberId's are not given in closed sequence. So they can't be predicted but tried
+
+###e examples 
+
 
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
