@@ -22,16 +22,56 @@ Property Members As List Of %Integer;
 A few explanation on operations structures for further extention:   
 GM badges never change or get deleted - so they just can grow   
 DC members can get GM badges granted, but the will never lose it  
-It is up to you to take care for correct manipulation of the M:N relations    
-for DELETE or UPDATE of DC memebers. This is left open intentional. 
+It is up to you to take care for correct maintenance of the M:N relations for   
+DELETE or UPDATE of DC members. This is intentionally left open . 
 
 3 utilitie are provided:   
 - Load: this loads and analyzes the information presentes on the member'S page     
 - Upd : runs over all defined members to usinf LOAD for actual values    
-- New : runs past the highest knoem member'S id and tries to find new ones  
+- New : runs past the highest known member's id and tries to find new ones  
 MemberId's are not given in closed sequence. So they can't be predicted but tried
 
-###e examples 
+### Examples 
+````
+---- find badges for specific members
+  select name,title FROM dc_data_rcc.DCmember
+  join dc_data_rcc.GMbadge on BadgeId %inlist (badges)
+  where mbrid in (13081,65426) 
+  order by 1,2
+----------------------------------------------
+Name	            Title
+Joerg Schuck    	1,000 Points
+Joerg Schuck    	Challenge Starter
+Joerg Schuck    	DC Commenter
+Joerg Schuck	    Open Sesame!
+Leontiy Mischenko	1,000 Points
+Leontiy Mischenko	5,000 Points
+Leontiy Mischenko	Challenge Starter
+Leontiy Mischenko	Open Sesame!
+----------------------------------------------
+
+---- find DCmembers that hold a specific GMbadge
+  select title, name FROM dc_data_rcc.GMbadge
+  join dc_data_rcc.DCmember on mbrid %inlist (members)
+  where badgeid in (15,25)
+  order by 1,2
+----------------------------------------------
+Title	                Name
+Conversation Starter	Dmitry Maslennikov
+Conversation Starter	Fabian Haupt
+Conversation Starter	Robert Cemper
+Conversation Starter	Scott Beeson
+Conversationalist	    david clifte
+Conversationalist	    Robert Cemper
+Conversationalist	    Scott Beeson
+Conversationalist	    Stephen De Gabrielle
+----------------------------------------------
+````
+
+
+
+
+
 
 
 ## Prerequisites
