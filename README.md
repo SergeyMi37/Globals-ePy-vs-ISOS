@@ -39,15 +39,15 @@ MemberId's are not given in closed sequence. So they can't be predicted but trie
   where mbrid in (13081,65426) 
   order by 1,2
 ----------------------------------------------
-Name	            Title
-Joerg Schuck    	1,000 Points
-Joerg Schuck    	Challenge Starter
-Joerg Schuck    	DC Commenter
-Joerg Schuck	    Open Sesame!
-Leontiy Mischenko	1,000 Points
-Leontiy Mischenko	5,000 Points
-Leontiy Mischenko	Challenge Starter
-Leontiy Mischenko	Open Sesame!
+Name               Title
+Joerg Schuck       1,000 Points
+Joerg Schuck       Challenge Starter
+Joerg Schuck       DC Commenter
+Joerg Schuck       Open Sesame!
+Leontiy Mischenko  1,000 Points
+Leontiy Mischenko  5,000 Points
+Leontiy Mischenko  Challenge Starter
+Leontiy Mischenko  Open Sesame!
 ----------------------------------------------
 
 ---- find DCmembers that hold a specific GMbadge
@@ -56,15 +56,15 @@ Leontiy Mischenko	Open Sesame!
   where badgeid in (15,25)
   order by 1,2
 ----------------------------------------------
-Title	                Name
-Conversation Starter	Dmitry Maslennikov
-Conversation Starter	Fabian Haupt
-Conversation Starter	Robert Cemper
-Conversation Starter	Scott Beeson
-Conversationalist	    david clifte
-Conversationalist	    Robert Cemper
-Conversationalist	    Scott Beeson
-Conversationalist	    Stephen De Gabrielle
+Title                 Name
+Conversation Starter  Dmitry Maslennikov
+Conversation Starter  Fabian Haupt
+Conversation Starter  Robert Cemper
+Conversation Starter  Scott Beeson
+Conversationalist     david clifte
+Conversationalist     Robert Cemper
+Conversationalist     Scott Beeson
+Conversationalist     Stephen De Gabrielle
 ----------------------------------------------
 ````
 
