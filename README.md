@@ -33,6 +33,7 @@ for DELETE or UPDATE of DC members. This is intentionally left open.
 - Upd() : runs over every defined member using *Load()* for actual values    
 - New() : runs past the highest known MemberId and tries to find new ones  
 MemberId's are not given in closed sequence. So they can't be predicted but only tried
+- To use these methods you need to create a SSL Configuration named " community" in SMP for client access to _community.intersystems.com:443_
 
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
