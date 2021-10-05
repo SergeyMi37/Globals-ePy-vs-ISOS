@@ -1,4 +1,4 @@
-## Dataset simple M:N
+# Dataset simple M:N
 This data set demonstrates a basic M:N realtionship between 2 tables   
 The dataset is trageted to show a **slim** implementation of M:N    
 It's no question that other implemenations exist. But at significant more storage consumption.
@@ -52,7 +52,7 @@ applying the decribed examples
 
 ### Example 1 
 - find badges for specific members
-````
+```
   select name,title FROM dc_data_rcc.DCmember
   join dc_data_rcc.GMbadge on BadgeId %inlist (badges)
   where mbrid in (13081,65426) 
@@ -68,10 +68,10 @@ Leontiy Mischenko  5,000 Points
 Leontiy Mischenko  Challenge Starter
 Leontiy Mischenko  Open Sesame!
 ----------------------------------------------
-````
+```
 ### Example 2
 - find DCmembers that hold a specific GMbadge
-````
+```
   select title, name FROM dc_data_rcc.GMbadge
   join dc_data_rcc.DCmember on mbrid %inlist (members)
   where badgeid in (15,25)
@@ -87,4 +87,4 @@ Conversationalist     Robert Cemper
 Conversationalist     Scott Beeson
 Conversationalist     Stephen De Gabrielle
 ----------------------------------------------
-````
+```
