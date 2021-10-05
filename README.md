@@ -3,11 +3,11 @@ This data set demonstrates a basic M:N realtionship between 2 tables
 The first is a list of members in Developer Community counting badges gained in Global Masters   
 The second is the reference of assigned badges from Global Masters with their titles   
 So we have M members that refer to the multiple badges they gained + their count    
-And we have set of N Bagdes that are assigned to several members with the count of mebers   
-releated tthe the badge and tre back link to them.   
+And we have set of N Bagdes that are assigned to several members + the count of members   
+releated to that badge and the Ids to these members.   
 
 All data result from analysis of the member web pages in Developer Community   
-A loader for update of ídentified menbers and addition of new members is provided   
+A utility for update of ídentified menbers and addition of new members is provided   
 The actual status reflects 9690 accounts pages downloaded and analyzed relating to 177 badges.   
 
 Relations are implemented as Lists of pure id's (not oref to save space on GitHub)   
@@ -25,13 +25,31 @@ DC members can get GM badges granted, but the will never lose it
 It is up to you to take care for correct maintenance of the M:N relations for   
 DELETE or UPDATE of DC members. This is intentionally left open . 
 
-3 utilitie are provided:   
+3 utility methods are provided:   
 - Load: this loads and analyzes the information presentes on the member'S page     
 - Upd : runs over all defined members to usinf LOAD for actual values    
 - New : runs past the highest known member's id and tries to find new ones  
 MemberId's are not given in closed sequence. So they can't be predicted but tried
 
-### Examples 
+
+## Prerequisites
+Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
+
+## Installation 
+Clone/git pull the repo into any local directory
+```
+git clone https://github.com/rcemper/Dataset-simple-M-N.git
+```
+Run the IRIS container with your project: 
+```
+docker-compose up -d --build
+```
+## How to Test it
+
+Connect to the containers SMP and examine content in namespace IRISAPP
+usind the decribed examples
+
+### Example 1 
 ````
 ---- find badges for specific members
   select name,title FROM dc_data_rcc.DCmember
@@ -50,6 +68,7 @@ Leontiy Mischenko  Challenge Starter
 Leontiy Mischenko  Open Sesame!
 ----------------------------------------------
 
+### Example 2
 ---- find DCmembers that hold a specific GMbadge
   select title, name FROM dc_data_rcc.GMbadge
   join dc_data_rcc.DCmember on mbrid %inlist (members)
@@ -67,30 +86,3 @@ Conversationalist     Scott Beeson
 Conversationalist     Stephen De Gabrielle
 ----------------------------------------------
 ````
-
-
-
-
-
-
-
-## Prerequisites
-Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
-
-## Installation 
-Clone/git pull the repo into any local directory
-```
-git clone https://github.com/rcemper/Dataset-simple-M-N.git
-```
-Run the IRIS container with your project: 
-```
-docker-compose up -d --build
-```
-## How to Test it
-
-Open IRIS terminal:
-###########################################################
-```
-$ docker-compose exec iris iris session iris 
-USER>write ##class(dc.PackageSample.ObjectScript).Test()
-```
