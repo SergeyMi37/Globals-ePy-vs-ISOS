@@ -3,7 +3,7 @@
   <Document name="dataset-simple-m-n.ZPM">
     <Module>
       <Name>dataset-simple-m-n</Name>
-      <Version>1.0.4</Version>
+      <Version>0.0.1</Version>
       <Description>Example of M:N relation</Description>
       <Keywords>M:N relation, data set</Keywords>  
       <Packaging>module</Packaging>
