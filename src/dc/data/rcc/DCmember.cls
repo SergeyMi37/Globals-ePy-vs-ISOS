@@ -1,8 +1,7 @@
-/// Users found in developer community
-/// includes number of badges in Global Masters
 Class dc.data.rcc.DCmember Extends %Persistent [ Final, SqlRowIdPrivate ]
 {
-
+/// Users found in developer community
+/// includes number of badges in Global Masters
 Parameter DEFAULTGLOBAL = "^rcc.Mbr";
 
 Property MbrId As %Integer(MINVAL = 1);
@@ -49,7 +48,5 @@ Storage Default
 <IndexLocation>^rcc.MbrI</IndexLocation>
 <StreamLocation>^rcc.MbrS</StreamLocation>
 <Type>%Storage.Persistent</Type>
-}
-
-                                
+}                                
 }
