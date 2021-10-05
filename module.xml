@@ -4,22 +4,15 @@
     <Module>
       <Name>dataset-simple-m-n/Name>
       <Version>1.0.4</Version>
-      <Description>Demonstration of M:N relation</Description>
+      <Description>Example of M:N relation</Description>
+      <Keywords>M:N relation, data set</Keywords>  
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-      <Resource Name="community.objectscript.PKG"/>
-      <Resource Name="community.objectscript.macroexample.INC"/>
-      <Resource Name="community.objectscript.MacExample.MAC"/>
-      <Resource Name="community.objectscript.settings.GBL"/>
-      <SystemSetting Name="CSP.DefaultFileCharset" Value="UTF-8"/>
-      <Invokes>
-        <Invoke Class="community.objectscript.PersistentClass" Method="CreateRecord"></Invoke>
-        <Invoke Class="community.objectscript.ClassExample" Method="SetToTheGlobal">
-          <Arg>42</Arg>
-          <Arg>Text Data</Arg>
-        </Invoke>
-      </Invokes>
+      <Resource Name="dc.data.rcc.PKG"/>
+      <Resource Name="dc.data.rcc.DCmemberD.GBL"/>
+      <Resource Name="dc.data.rcc.DCmemberI.GBL"/>
+      <Resource Name="dc.data.rcc.GMbadgeD.GBL"/>
+      <Resource Name="dc.data.rcc.GMbadgeI.GBL"/>
     </Module>
-   
   </Document>
 </Export>
