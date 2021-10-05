@@ -89,3 +89,5 @@ Conversationalist     Scott Beeson
 Conversationalist     Stephen De Gabrielle
 ----------------------------------------------
 ```
+
+[Article in DC](https://community.intersystems.com/post/dataset-lightweight-mn)
