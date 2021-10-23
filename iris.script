@@ -2,6 +2,7 @@
 
 zn "%SYS"
 Do ##class(Security.Users).UnExpireUserPasswords("*")
+zpm "install webterminal"
 
 zn "USER"
 zpm "load /opt/irisbuild/ -v":1:1
