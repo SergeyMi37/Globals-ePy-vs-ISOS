@@ -50,8 +50,9 @@ Run the IRIS container with your project:
 docker-compose up -d --build
 ```
 ## How to Test it
-Connect to the containers SMP and examine content in namespace USER
-applying the decribed examples
+Connect to the containers SMP and examine content in namespace USER   
+applying the described examples   
+**[or use Online Demo](https://dataset-lightweight-m-n.demo.community.intersystems.com/csp/sys/UtilHome.csp)**
 
 ### Example 1 
 - find badges for specific members
