@@ -10,7 +10,7 @@ env:
   # Change this section according to your needs
   IMAGE_NAME:   dataset-lightweight-m-n
   SERVICE:      dataset-lightweight-m-n
-  DOMAIN_NAME:  dataset-lightweight-m-n.demo.community.intersystems.com
+  DOMAIN_NAME:  lightweight-mn.demo.community.intersystems.com
 # Leave this section untouched  ok
   PROJECT_ID:   iris-community-demos
   CLUSTER_NAME: demo
