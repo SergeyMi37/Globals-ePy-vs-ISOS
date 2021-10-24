@@ -51,8 +51,8 @@ docker-compose up -d --build
 ```
 ## How to Test it
 Connect to the containers SMP and examine content in namespace USER   
-applying the described examples   
-**[or use Online Demo](https://dataset-lightweight-m-n.demo.community.intersystems.com/csp/sys/UtilHome.csp)**
+applying the described examples      
+**[or use Online Demo](https://lightweight-mn.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen)**
 
 ### Example 1 
 - find badges for specific members
