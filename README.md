@@ -5,7 +5,8 @@ It's no question that other implementations exist. But at significant more stora
 
 The first is a list of members in Developer Community counting badges gained in Global Masters   
 The second is the reference of assigned badges from Global Masters with their titles   
-So we have M members that refer to the multiple badges they gained + their count    
+So we have M members that refer to the multiple badges they gained + their count
+To protect privacy the names of the members are encrypted.    
 And we have a set of N Bagdes that are assigned to several members + the count of members   
 related to that badge and the Ids to these members.   
 
