@@ -83,7 +83,7 @@ ClassMethod Load(id) As %Status
 			if data.AtEnd quit
 			if n,lin["<title>" {
 				set name=$p($p(lin,">",2)," badges")
-					,member.Name=name
+					,member.Name=..crypt(name)
 					,member.MbrId=id
 					,n=0
 				continue	
@@ -137,6 +137,16 @@ setbadge
 	set sc=badge.%Save()
 	if 'sc write $system.OBJ.DisplayError(sc) b 
 	quit sc
+}
+
+/// hide readable name 
+ClassMethod crypt(name As %String = "unknown") As %String [ SqlProc ]
+{
+	set n=$zcvt(name,"U")
+		,p=$a(n)#32
+		,cy="" 
+	for i=1:1:$l(n) set c=p+$a(n,i),cy=cy_$c(c)
+	quit cy
 }
 
 }
