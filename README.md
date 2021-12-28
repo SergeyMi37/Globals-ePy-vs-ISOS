@@ -104,6 +104,6 @@ Settings file to let you immedietly code in VSCode with [VSCode ObjectScript plu
 Config file if you want to debug with VSCode ObjectScript
 
 ### Code Quality
-![CodeQuality](https://raw.githubusercontent.com/rcemper/Dataset-Lightweight-M-N/master/CodeQuality.JPG)
+![CodeQuality](https://raw.githubusercontent.com/rcemper/Dataset-Lightweight-M-N/master/CodeQuality.JPG) 
 
 [Article in DC](https://community.intersystems.com/post/dataset-lightweight-mn)
