@@ -63,14 +63,15 @@ applying the described examples
   order by 1,2
 ----------------------------------------------
 Name               Title
-Joerg Schuck       1,000 Points
-Joerg Schuck       Challenge Starter
-Joerg Schuck       DC Commenter
-Joerg Schuck       Open Sesame!
-Leontiy Mischenko  1,000 Points
-Leontiy Mischenko  5,000 Points
-Leontiy Mischenko  Challenge Starter
-Leontiy Mischenko  Open Sesame!
+TYO\Q*]MR_MU	    1,000 Points
+TYO\Q*]MR_MU	    Challenge Starter
+TYO\Q*]MR_MU	    DC Commenter
+TYO\Q*]MR_MU	    Open Sesame!
+XQ[Z`Ue,YU_OTQZW[	1,000 Points
+XQ[Z`Ue,YU_OTQZW[	5,000 Points
+XQ[Z`Ue,YU_OTQZW[	Challenge Starter
+XQ[Z`Ue,YU_OTQZW[	Open Sesame!
+
 ----------------------------------------------
 ```
 ### Example 2
@@ -82,14 +83,15 @@ Leontiy Mischenko  Open Sesame!
   order by 1,2
 ----------------------------------------------
 Title                 Name
-Conversation Starter  Dmitry Maslennikov
-Conversation Starter  Fabian Haupt
-Conversation Starter  Robert Cemper
-Conversation Starter  Scott Beeson
-Conversationalist     david clifte
-Conversationalist     Robert Cemper
-Conversationalist     Scott Beeson
-Conversationalist     Stephen De Gabrielle
+Conversation Starter	daTWdf2UW_bWd
+Conversation Starter	fVbgg3UXXfba
+Conversation Starter	HQMXV]$QEWPIRRMOSZ
+Conversation Starter	LGHOGT&NG[VZ
+Conversationalist	    daTWdf2UW_bWd
+Conversationalist	    fgXc[Xa3WX3ZTUe\X__X
+Conversationalist	    fVbgg3UXXfba
+Conversationalist	    HEZMH$GPMJXI
+
 ----------------------------------------------
 ```
 ## What's inside the repository
