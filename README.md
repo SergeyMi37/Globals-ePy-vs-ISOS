@@ -12,7 +12,7 @@ related to that badge and the Ids to these members.
 
 All datas result from the analysis of the member web pages in Developer Community   
 A utility for updates of ídentified members and the addition of new members is provided   
-The actual status reflects **10286** account pages downloaded and analyzed relating to **179** badges.   
+The actual status reflects **10286** account pages downloaded and analyzed relating to **177** badges.   
 
 Relations are implemented as Lists of pure id's (not *oref* to save space)   
 ````
@@ -93,6 +93,34 @@ Conversationalist     fVbgg3UXXfba
 Conversationalist     HEZMH$GPMJXI
 ----------------------------------------------
 ```
+### Example 3
+- find DCWinners with GMbadge
+```
+   select Title,mbcnt, name,badgecount FROM dc_data_rcc.GMbadge b
+   join dc_data_rcc.DCmember on mbrid %inlist(members)
+   and title [ 'Winner'
+   order by badgecount desc
+----------------------------------------------   
+Title				MbCnt	Name		BadgeCount
+IRIS Contest Winner		12	daTWdf2UW_bWd		81
+Silver IRIS Contest Winner	11	daTWdf2UW_bWd		81
+Winner of AdventOfCOS2017	3	HQMXV]$QEWPIRRMOSZ	74
+Winner of AdventOfCOS2018	3	HQMXV]$QEWPIRRMOSZ	74
+IRIS Contest Winner		12	HQMXV]$QEWPIRRMOSZ	74
+Bronze IRIS Contest Winner	8	HQMXV]$QEWPIRRMOSZ	74
+Silver IRIS Contest Winner	11	HQMXV]$QEWPIRRMOSZ	74
+Gold IRIS Contest Winner	7	HQMXV]$QEWPIRRMOSZ	74
+IRIS Contest Winner		12	TYRX*W_\\Kc		55
+Gold IRIS Contest Winner	7	TYRX*W_\\Kc		55
+Winner of AdventOfCOS2017	3	`UdUb0cdUYgUb		43
+Winner of AdventOfCOS2019	2	`UdUb0cdUYgUb		43
+IRIS Contest Winner		12	PMVZQY]M(LQI[		43
+Bronze IRIS Contest Winner	8	PMVZQY]M(LQI[		43
+Silver IRIS Contest Winner	11	PMVZQY]M(LQI[		44
+. . .  total 53 rows . . . 
+----------------------------------------------   
+````
+
 ## What's inside the repository
 ### Dockerfile
 The simplest dockerfile which starts IRIS and imports code from /src folder into it.   
