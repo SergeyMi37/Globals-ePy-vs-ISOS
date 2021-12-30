@@ -12,7 +12,7 @@ related to that badge and the Ids to these members.
 
 All datas result from the analysis of the member web pages in Developer Community   
 A utility for updates of ídentified members and the addition of new members is provided   
-The actual status reflects **10286** account pages downloaded and analyzed relating to **177** badges.   
+The actual status reflects **10286** account pages downloaded and analyzed relating to **179** badges.   
 
 Relations are implemented as Lists of pure id's (not *oref* to save space)   
 ````
