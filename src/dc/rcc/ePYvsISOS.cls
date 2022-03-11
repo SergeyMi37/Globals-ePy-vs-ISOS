@@ -5,16 +5,29 @@ ClassMethod do()
 {
 	set ^run=0
 	kill ^ePy,^ISOS
-	job ..setPy()
-	job ..setISOS()
+	job ..setISOS()::5 
+	write !,"JobStart ISOS "_$s($t:"#"_$ZC,1:"failed")
+	job ..jobPy()::5
+	write !,"JobStart  ePy "_$s($t:"#"_$ZC,1:"failed")
+
 	for  {
-		write !,"Control [0=stop,1=view,2=go]: "
+		write !,"Job Control [0=stop,1=view,2=go]: "
 		read ctrl#1:15
-		if '$l(ctrl)||("012"'[ctrl) continue
-		set ^run=ctrl-1 continue:^run>0
-		hang 1 w ! zw ^ePy w ! zw ^ISOS
+		if '$t||("012"'[ctrl) {
+			if $i(f)<4 continue
+			else  set ctrl=1
+			}	
+		set ^run=ctrl-1,f=0 continue:^run>0
+		hang 1 
+		if $d(^ePy),$d(^ePy(^ePy),s),$d(^ePy(^ePy,s),v) write !,$zr,"=",v,!
+		if $d(^ISOS),$d(^ISOS(^ISOS),s),$d(^ISOS(^ISOS,s),v) write $zr,"=",v,!
 		quit:'ctrl 
 	}
+}
+
+ClassMethod jobPy()
+{
+	do ..setPy()
 }
 
 ClassMethod setPy() [ Language = python ]
@@ -47,7 +60,7 @@ while True:
 		gePy[sub1]=sub2
 		zdt3=datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
 		gePy[sub1,sub2]=zdt3
-		time.sleep(1.5)		
+#		time.sleep(0.5)		
 		if grun[None]<1:
 			break
 }
@@ -60,7 +73,7 @@ ClassMethod setISOS()
 		for {
 			set ^ISOS(sub1,$I(^ISOS(sub1)))=$ZDT($NOW(),3,,6)
 			quit:$g(^run)<1
-			hang 1.5
+#;			hang 0.5
 			}
 		}	
 
@@ -70,3 +83,4 @@ wait()
 }
 
 }
+
