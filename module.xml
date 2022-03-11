@@ -4,7 +4,7 @@
     <Module>
       <Name>globals-epy-vs-isos</Name>
       <Version>0.0.1</Version>
-      <Description>compare global write performance SPy vs. ISOS/Description>
+      <Description>compare global write performance SPy vs. ISOS</Description>
       <Keywords>M:N relation, data set</Keywords>  
 	  	<Author>
 			<Person>Robert C. Cemper</Person>
