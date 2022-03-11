@@ -1,4 +1,4 @@
-# Globals-ePy-vs.ISOS
+# Globals-ePy-vs-ISOS
 This data set demonstrates a basic M:N relationship between 2 tables   
 The dataset is targeted to show a **slim** implementation of M:N    
 It's no question that other implementations exist. But at significant more storage consumption.
@@ -44,7 +44,7 @@ Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installi
 ## Installation 
 Clone/git pull the repo into any local directory
 ```
-git clone https://github.com/rcemper/Globals-ePy-vs.-ISOS.git
+git clone https://github.com/rcemper/Globals-ePy-vs-ISOS.git
 ```
 Run the IRIS container with your project: 
 ```
