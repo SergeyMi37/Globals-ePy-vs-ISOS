@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="dataset-simple-m-n.ZPM">
+  <Document name="globals-epy-vs-isos.ZPM">
     <Module>
-      <Name>dataset-simple-m-n</Name>
-      <Version>1.0.1</Version>
-      <Description>Example of M:N relation</Description>
+      <Name>globals-epy-vs-isos</Name>
+      <Version>0.0.1</Version>
+      <Description>compare global write performance SPy vs. ISOS/Description>
       <Keywords>M:N relation, data set</Keywords>  
 	  	<Author>
 			<Person>Robert C. Cemper</Person>
-			<CopyrightDate>2021</CopyrightDate>
+			<CopyrightDate>2022</CopyrightDate>
 			<License>MIT</License>
 			<Notes>
-				repository: https://github.com/rcemper/Dataset-Lightweight-M-N
+				repository: https://github.com/rcemper/Globals-ePy-vs.-ISOS
 			</Notes>
 		</Author>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-      <Resource Name="dc.data.rcc.PKG"/>
-      <Resource Name="dc.data.rcc.DCmember.GBL"/>
-      <Resource Name="dc.data.rcc.GMbadge.GBL"/>
+      <Resource Name="dc.rcc.ePYvsISOS.CLS"/>
     </Module>
   </Document>
 </Export>
