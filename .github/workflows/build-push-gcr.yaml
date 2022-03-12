@@ -8,9 +8,9 @@ on:
 
 env:
   # Change this section according to your needs
-  IMAGE_NAME:   dataset-lightweight-m-n
-  SERVICE:      dataset-lightweight-m-n
-  DOMAIN_NAME:  lightweight-mn.demo.community.intersystems.com
+  IMAGE_NAME:   globals-epy-vs-isos
+  SERVICE:      globals-epy-vs-isos
+  DOMAIN_NAME:  globals-epy-vs-isos.demo.community.intersystems.com
 # Leave this section untouched  ok
   PROJECT_ID:   iris-community-demos
   CLUSTER_NAME: demo
