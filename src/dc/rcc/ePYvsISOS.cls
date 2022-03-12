@@ -13,7 +13,7 @@ ClassMethod do()
 	for  {
 		write !,"Job Control [0=stop,1=view,2=go]: "
 		read ctrl#1:15
-		if '$t||("012"'[ctrl) {
+		if '$l(ctrl)||("012"'[ctrl) {
 			if $i(f)<4 continue
 			else  set ctrl=1
 			}	
