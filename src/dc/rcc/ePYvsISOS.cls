@@ -25,12 +25,13 @@ ClassMethod do()
 	}
 }
 
-ClassMethod jobPy()
+ClassMethod jobPy() as %Status
 {
 	do ..setPy()
+	quit $$$OK
 }
 
-ClassMethod setPy() [ Language = python ]
+ClassMethod setPy() as %Integer [ Language = python ]
 {
 import iris, datetime, time
 
@@ -63,9 +64,10 @@ while True:
 #		time.sleep(0.5)		
 		if grun[None]<1:
 			break
+	return 1
 }
 
-ClassMethod setISOS()
+ClassMethod setISOS() as %Status
 {
 	for  {
 		quit:$$wait()<0
@@ -76,7 +78,7 @@ ClassMethod setISOS()
 #;			hang 0.5
 			}
 		}	
-
+	quit $$$OK
 wait()
 	for  set run=$g(^run) quit:run  hang 1 
 	quit run
