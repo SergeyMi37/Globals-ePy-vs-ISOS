@@ -9,7 +9,7 @@ Similar a common stop & view interrupts data feeding.
 As 2 jobs run in parallel the probability of just using sequential blocks is reduced.    
 During the development of this demo, I detected that the JOB command has problems   
 with ClassMethods in Embedded Python.    
-**WARNING:**  
+**WARNING:**     
 Due to the poor dimensioned Community License the start of the background jobs     
 may fail if you have other connections active at the same time. 
 
