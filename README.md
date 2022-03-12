@@ -36,14 +36,14 @@ Run the IRIS container with your project:
 docker-compose up -d --build
 ```
 ## How to Test it
-Connect to the container using [webterminal](http://localhost:52773/terminal/) or    
+Connect to the container using [webterminal](http://localhost:52773/terminal/?ns=USER) or    
 start an IRIS session in docker
 ```
    docker-compose exec iris iris session iris
 ```
 or use
 **[Online Demo SMP](https://globals-epy-vs-isos.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen)**
-**[Online Demo Webtermial](https://globals-epy-vs-isos.demo.community.intersystems.com/terminal/)**
+**[Online Demo Webtermial](https://globals-epy-vs-isos.demo.community.intersystems.com/terminal/?ns=USER)**
 ### Example
 ```
 USER>do ##class(dc.rcc.ePYvsISOS).do()
