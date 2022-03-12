@@ -14,7 +14,7 @@ ClassMethod do()
 		write !,"Job Control [0=stop,1=view,2=go]: "
 		read ctrl#1:15
 		if '$l(ctrl)||("012"'[ctrl) {
-			if $i(f)<4 continue
+			if $i(f)<3 continue
 			else  set ctrl=1
 			}	
 		set ^run=ctrl-1,f=0 continue:^run>0
