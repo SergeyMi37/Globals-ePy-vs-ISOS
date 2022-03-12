@@ -41,7 +41,7 @@ start an IRIS session in docker
 ```
    docker-compose exec iris iris session iris
 ```
-**[or use Online Demo](https://lightweight-mn.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen)**
+**[or use Online Demo](https://globals-epy-vs-isos.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen)**
 
 ### Example
 ```
