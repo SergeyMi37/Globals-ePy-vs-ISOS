@@ -41,9 +41,9 @@ start an IRIS session in docker
 ```
    docker-compose exec iris iris session iris
 ```
-or use
-**[Online Demo SMP](https://globals-epy-vs-isos.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen)**
-**[Online Demo Webtermial](https://globals-epy-vs-isos.demo.community.intersystems.com/terminal/?ns=USER)**
+or use    
+**[Online Demo SMP](https://globals-epy-vs-isos.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen)**    
+**[Online Demo Webtermial](https://globals-epy-vs-isos.demo.community.intersystems.com/terminal/?ns=USER)**    
 ### Example
 ```
 USER>do ##class(dc.rcc.ePYvsISOS).do()
