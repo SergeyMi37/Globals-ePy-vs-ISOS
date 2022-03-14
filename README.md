@@ -64,7 +64,7 @@ Job Control [0=stop,1=view,2=go]:
 ^ePy(2,4149270)=2022-03-11 20:50:54.620362
 ^ISOS(2,7719690)=2022-03-11 20:50:54.620371
 
-Job Control [0=stop,1=view,2=go]:
+Job Control [0=stop,1=view,2=go]:2
 Job Control [0=stop,1=view,2=go]:
 Job Control [0=stop,1=view,2=go]: 0
 ^ePy(3,3148765)=2022-03-11 20:50:54.620362
