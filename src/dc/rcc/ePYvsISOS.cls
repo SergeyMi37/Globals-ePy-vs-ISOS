@@ -46,8 +46,7 @@ def wait():
 			continue
 		else:
 			break
-
-return run
+	return run
 
 sub1=0
 while True:
@@ -65,7 +64,8 @@ while True:
 #		time.sleep(0.5)		
 		if grun[None]<1:
 			break
-	return 1
+	
+return 1
 }
 
 ClassMethod setISOS() as %Status
