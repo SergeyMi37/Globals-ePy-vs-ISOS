@@ -46,7 +46,8 @@ def wait():
 			continue
 		else:
 			break
-	return run
+
+return run
 
 sub1=0
 while True:
