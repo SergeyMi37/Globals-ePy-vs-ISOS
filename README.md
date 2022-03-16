@@ -84,4 +84,5 @@ Config file if you want to debug with VSCode ObjectScript
 ### Code Quality 
 ![CodeQuality](https://raw.githubusercontent.com/rcemper/Globals-ePy-vs-ISOS/master/CodeQuality.JPG) 
 
-[Article in DC](https://pt.community.intersystems.com/post/globals-comparar-embedded-python-e-objectscript)
+[Article in DC.PT](https://pt.community.intersystems.com/post/globals-comparar-embedded-python-e-objectscript)     
+[Article in DC.EN](https://community.intersystems.com/post/compare-global-write-epy-vs-isoscos) 
