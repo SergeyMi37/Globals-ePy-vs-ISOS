@@ -86,3 +86,5 @@ Config file if you want to debug with VSCode ObjectScript
 
 [Article in DC.PT](https://pt.community.intersystems.com/post/globals-comparar-embedded-python-e-objectscript)     
 [Article in DC.EN](https://community.intersystems.com/post/compare-global-write-epy-vs-isoscos) 
+
+[Video](https://youtu.be/SUVrHidHpmg)
