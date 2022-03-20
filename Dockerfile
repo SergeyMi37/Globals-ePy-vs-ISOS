@@ -10,7 +10,7 @@ USER ${ISC_PACKAGE_MGRUSER}
 COPY src src
 COPY module.xml module.xml
 COPY iris.script iris.script
-COPY reset.sh reset.sh
+COPY reset.script reset.script
 
 RUN iris start IRIS \
 	&& iris session IRIS < iris.script \
